@@ -5,7 +5,7 @@ RUN useradd user_dev -u 1000
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
 	git \
-    apache2 \
+        apache2 \
 	php7.1 \
 	php7.1-common \
 	php7.1-mysql \
@@ -23,7 +23,7 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
 	curl \
 	lynx-cur \
 	php-xdebug \
-	vim
+	
 
 # Enable apache mods.
 RUN a2enmod php7.1
